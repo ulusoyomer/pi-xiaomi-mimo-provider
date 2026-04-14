@@ -26,6 +26,11 @@
     "README.md",
     "LICENSE"
   ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
   "pi": {
     "extensions": [
       "./index.ts"
@@ -38,6 +43,7 @@
   "devDependencies": {
     "@mariozechner/pi-ai": "^0.67.1",
     "@mariozechner/pi-coding-agent": "^0.67.1",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
   }
 }
