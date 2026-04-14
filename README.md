@@ -16,7 +16,7 @@ Xiaomi Mimo provider extension for the [pi coding agent](https://github.com/badl
 # From GitHub
 pi install git:github.com/ulusoyomer/pi-xiaomi-mimo-provider
 
-# From npm (when published)
+# From npm
 pi install npm:pi-xiaomi-mimo-provider
 ```
 
