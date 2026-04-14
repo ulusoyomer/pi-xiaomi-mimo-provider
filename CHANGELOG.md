@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-04-14
+
+### Changed
+
+- Default context window reduced from 1M to **128K** (131072 tokens) to reduce credit consumption
+
+### Added
+
+- Configurable context window via `XIAOMI_MIMO_CONTEXT_WINDOW` environment variable (e.g. `128k`, `256k`, `1m`)
+- `/mimo-context` command to view or change context window at runtime
+- Supports formats: `64k`, `128k`, `256k`, `512k`, `1m`, or plain numbers
+- 7 new tests for context window configuration and `/mimo-context` command
+
 ## [1.1.0] - 2026-04-14
 
 ### Added
