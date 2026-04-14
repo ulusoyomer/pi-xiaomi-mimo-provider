@@ -14,7 +14,7 @@
  *   /login xiaomi-mimo
  *   /model mimo-v2-pro
  *
- * API keys: https://xiaomimimo.com
+ * API keys: https://platform.xiaomimimo.com/#/console/plan-manage
  */
 
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";

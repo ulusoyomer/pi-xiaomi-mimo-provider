@@ -28,7 +28,7 @@ After installing, authenticate with your Xiaomi Mimo API key:
 /login xiaomi-mimo
 ```
 
-Get your API key at: https://xiaomimimo.com
+Get your API key at: https://platform.xiaomimimo.com/#/console/plan-manage
 
 ### Alternative: Environment Variable
 
