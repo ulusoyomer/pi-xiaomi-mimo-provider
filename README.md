@@ -1,4 +1,4 @@
-# pi-mimo-provider
+# pi-xiaomi-mimo-provider
 
 Xiaomi Mimo provider extension for the [pi coding agent](https://github.com/badlogic/pi-mono). Registers Xiaomi Mimo models using the OpenAI-compatible API.
 
@@ -14,10 +14,10 @@ Xiaomi Mimo provider extension for the [pi coding agent](https://github.com/badl
 
 ```bash
 # From GitHub
-pi install git:github.com/ulusoyomer/pi-mimo-provider
+pi install git:github.com/ulusoyomer/pi-xiaomi-mimo-provider
 
 # From npm (when published)
-pi install npm:pi-mimo-provider
+pi install npm:pi-xiaomi-mimo-provider
 ```
 
 ## Setup
