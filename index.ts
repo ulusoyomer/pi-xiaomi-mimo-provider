@@ -10,7 +10,7 @@
  *   - mimo-v2-tts  — Text-to-speech model, text input
  *
  * Usage:
- *   pi install git:github.com/ulusoyomer/pi-mimo-provider
+ *   pi install git:github.com/ulusoyomer/pi-xiaomi-mimo-provider
  *   /login xiaomi-mimo
  *   /model mimo-v2-pro
  *

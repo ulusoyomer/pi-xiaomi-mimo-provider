@@ -1,5 +1,5 @@
 {
-  "name": "pi-mimo-provider",
+  "name": "pi-xiaomi-mimo-provider",
   "version": "1.0.0",
   "description": "Xiaomi Mimo provider extension for pi coding agent — registers mimo-v2-pro, mimo-v2-omni, and mimo-v2-tts models",
   "type": "module",
@@ -15,11 +15,11 @@
   "author": "ulusoyomer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ulusoyomer/pi-mimo-provider"
+    "url": "https://github.com/ulusoyomer/pi-xiaomi-mimo-provider"
   },
-  "homepage": "https://github.com/ulusoyomer/pi-mimo-provider#readme",
+  "homepage": "https://github.com/ulusoyomer/pi-xiaomi-mimo-provider#readme",
   "bugs": {
-    "url": "https://github.com/ulusoyomer/pi-mimo-provider/issues"
+    "url": "https://github.com/ulusoyomer/pi-xiaomi-mimo-provider/issues"
   },
   "files": [
     "index.ts",
