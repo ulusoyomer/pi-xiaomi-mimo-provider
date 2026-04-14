@@ -4,11 +4,11 @@ Xiaomi Mimo provider extension for the [pi coding agent](https://github.com/badl
 
 ## Models
 
-| Model | Context | Max Output | Reasoning | Input |
-| --- | --- | --- | --- | --- |
-| MiMo V2 Pro | 128K | 16K | ✅ | Text, Image |
-| MiMo V2 Omni | 128K | 16K | ✅ | Text, Image |
-| MiMo V2 TTS | 128K | 16K | ❌ | Text |
+| Model | Context | Max Output | Reasoning | Input | Input $/MTok | Output $/MTok |
+| --- | --- | --- | --- | --- | --- | --- |
+| MiMo V2 Pro | 1M | 16K | ✅ | Text, Image | $1.00 | $3.00 |
+| MiMo V2 Omni | 1M | 16K | ✅ | Text, Image | $1.00 | $3.00 |
+| MiMo V2 TTS | 1M | 16K | ❌ | Text | Free | Free |
 
 ## Installation
 
@@ -77,8 +77,9 @@ This extension uses the OpenAI-compatible endpoint.
 ## Notes
 
 - The API returns `reasoning_content` in responses, which pi handles natively for reasoning models
-- Cost values are set to zero — update them in `index.ts` if pricing becomes available
-- Context window and max output tokens are estimated defaults — adjust if you have official values
+- Context window is 1M tokens (1,048,576) for mimo-v2-pro and mimo-v2-omni
+- Cost values based on official Xiaomi pricing: $1/$3 per MTok (up to 256K context), $2/$6 (256K-1M context)
+- Cache write is currently free per Xiaomi's pricing page
 
 ## License
 
