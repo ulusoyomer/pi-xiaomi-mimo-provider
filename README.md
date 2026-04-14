@@ -74,6 +74,19 @@ Switch to a Xiaomi Mimo model:
 
 This extension uses the OpenAI-compatible endpoint.
 
+## Reasoning Control
+
+Toggle reasoning on/off with pi's thinking commands:
+
+```bash
+/thinking minimal   # Reasoning OFF
+/thinking low       # Low reasoning
+/thinking medium    # Medium reasoning
+/thinking high      # Max reasoning
+```
+
+Applies to `mimo-v2-pro` and `mimo-v2-omni` only. `mimo-v2-tts` does not support reasoning.
+
 ## Notes
 
 - The API returns `reasoning_content` in responses, which pi handles natively for reasoning models

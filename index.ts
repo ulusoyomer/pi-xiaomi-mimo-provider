@@ -35,6 +35,15 @@ export default function (pi: ExtensionAPI) {
 				cost: { input: 1.0, output: 3.0, cacheRead: 0.2, cacheWrite: 0 },
 				contextWindow: 1048576,
 				maxTokens: 16384,
+				compat: {
+					supportsReasoningEffort: true,
+					reasoningEffortMap: {
+						minimal: "none",
+						low: "low",
+						medium: "medium",
+						high: "high",
+					},
+				},
 			},
 			{
 				id: "mimo-v2-omni",
@@ -44,6 +53,15 @@ export default function (pi: ExtensionAPI) {
 				cost: { input: 1.0, output: 3.0, cacheRead: 0.2, cacheWrite: 0 },
 				contextWindow: 1048576,
 				maxTokens: 16384,
+				compat: {
+					supportsReasoningEffort: true,
+					reasoningEffortMap: {
+						minimal: "none",
+						low: "low",
+						medium: "medium",
+						high: "high",
+					},
+				},
 			},
 			{
 				id: "mimo-v2-tts",

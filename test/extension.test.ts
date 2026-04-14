@@ -94,6 +94,50 @@ describe('xiaomi-mimo provider extension', () => {
 		expect(new Set(ids).size).toBe(ids.length);
 	});
 
+	describe('reasoning compat', () => {
+		it('mimo-v2-pro has reasoning effort compat enabled', () => {
+			const pi = createMockPi();
+			extension(pi);
+
+			const config = pi.registerProvider.mock.calls[0][1] as any;
+			const pro = config.models.find((m: any) => m.id === 'mimo-v2-pro');
+
+			expect(pro.compat.supportsReasoningEffort).toBe(true);
+			expect(pro.compat.reasoningEffortMap).toEqual({
+				minimal: 'none',
+				low: 'low',
+				medium: 'medium',
+				high: 'high',
+			});
+		});
+
+		it('mimo-v2-omni has reasoning effort compat enabled', () => {
+			const pi = createMockPi();
+			extension(pi);
+
+			const config = pi.registerProvider.mock.calls[0][1] as any;
+			const omni = config.models.find((m: any) => m.id === 'mimo-v2-omni');
+
+			expect(omni.compat.supportsReasoningEffort).toBe(true);
+			expect(omni.compat.reasoningEffortMap).toEqual({
+				minimal: 'none',
+				low: 'low',
+				medium: 'medium',
+				high: 'high',
+			});
+		});
+
+		it('mimo-v2-tts has no compat settings', () => {
+			const pi = createMockPi();
+			extension(pi);
+
+			const config = pi.registerProvider.mock.calls[0][1] as any;
+			const tts = config.models.find((m: any) => m.id === 'mimo-v2-tts');
+
+			expect(tts.compat).toBeUndefined();
+		});
+	});
+
 	describe('OAuth', () => {
 		it('has oauth config with correct name', () => {
 			const pi = createMockPi();

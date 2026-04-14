@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-04-14
+
+### Added
+
+- Reasoning on/off control via `compat.supportsReasoningEffort` for mimo-v2-pro and mimo-v2-omni
+- `reasoningEffortMap` mapping: `minimal`→none (reasoning off), `low`→low, `medium`→medium, `high`→high
+- Users can toggle reasoning with `/thinking minimal` (off) or `/thinking high` (max)
+- 3 new tests for reasoning compat settings
+
 ## [1.0.5] - 2026-04-14
 
 ### Fixed
