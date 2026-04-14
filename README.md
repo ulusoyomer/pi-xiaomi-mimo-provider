@@ -79,7 +79,8 @@ This extension uses the OpenAI-compatible endpoint.
 Toggle reasoning on/off with pi's thinking commands:
 
 ```bash
-/thinking minimal   # Reasoning OFF
+/thinking off       # Reasoning OFF
+/thinking minimal   # Minimal reasoning
 /thinking low       # Low reasoning
 /thinking medium    # Medium reasoning
 /thinking high      # Max reasoning

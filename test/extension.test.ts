@@ -104,6 +104,7 @@ describe('xiaomi-mimo provider extension', () => {
 
 			expect(pro.compat.supportsReasoningEffort).toBe(true);
 			expect(pro.compat.reasoningEffortMap).toEqual({
+				off: 'none',
 				minimal: 'none',
 				low: 'low',
 				medium: 'medium',
@@ -120,6 +121,7 @@ describe('xiaomi-mimo provider extension', () => {
 
 			expect(omni.compat.supportsReasoningEffort).toBe(true);
 			expect(omni.compat.reasoningEffortMap).toEqual({
+				off: 'none',
 				minimal: 'none',
 				low: 'low',
 				medium: 'medium',

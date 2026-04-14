@@ -38,6 +38,7 @@ export default function (pi: ExtensionAPI) {
 				compat: {
 					supportsReasoningEffort: true,
 					reasoningEffortMap: {
+						off: "none",
 						minimal: "none",
 						low: "low",
 						medium: "medium",
@@ -56,6 +57,7 @@ export default function (pi: ExtensionAPI) {
 				compat: {
 					supportsReasoningEffort: true,
 					reasoningEffortMap: {
+						off: "none",
 						minimal: "none",
 						low: "low",
 						medium: "medium",
