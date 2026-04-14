@@ -24,6 +24,7 @@
   "files": [
     "index.ts",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "scripts": {
